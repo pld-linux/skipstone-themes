@@ -1,5 +1,5 @@
 Summary:	SkipStone themes
-Summary(pl):	Tematy do SkipStone
+Summary(pl):	Motywy do SkipStone
 Name:		skipstone-themes
 Version:	0.7.9
 Release:	2
@@ -24,33 +24,22 @@ BuildRequires:	libstdc++-devel
 Requires:	skipstone = %{version}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define		_themesdir		/usr/X11R6/share/skipstone/pixmaps
+%define		_prefix		/usr/X11R6
+%define		_themesdir	%{_datadir}/skipstone/pixmaps
 
 %description
-SkipStone Themes
-engine.
+SkipStone Themes engine.
 
 %description -l pl
-Tematy do SkipStone
+Motywy do SkipStone.
 
-%prep 
-%setup -c -n %{name}-%{version}
-%setup -T -c -D -a 1
-%setup -T -c -D -a 2 
-%setup -T -c -D -a 3
-%setup -T -c -D -a 4
-%setup -T -c -D -a 5
-%setup -T -c -D -a 6
-%setup -T -c -D -a 7
-%setup -T -c -D -a 8
-%setup -T -c -D -a 9
-%setup -T -c -D -a 10
-%setup -T -c -D -a 11
-%setup -T -c -D -a 12 
+%prep
+%setup -q -c -a1 -a2 -a3 -a4 -a5 -a6 -a7 -a8 -a9 -a10 -a11 -a12
 
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_themesdir}/{GoldStone,SilverStone,antarctic,aqua_blue,aqua_white,chrome,gnome,gold,Konquerer,microgui,mozilla,pixels,revamped}
+
 for i in GoldStone SilverStone antarctic aqua_blue aqua_white chrome gnome gold Konquerer microgui mozilla pixels revamped; do
 install ${i}/* $RPM_BUILD_ROOT%{_themesdir}/$i
 done
