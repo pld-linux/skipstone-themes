@@ -24,7 +24,6 @@ BuildRequires:	libstdc++-devel
 Requires:	skipstone => %{version}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define		_prefix		/usr/X11R6
 %define		_themesdir	%{_datadir}/skipstone/pixmaps
 
 %description
