@@ -2,7 +2,7 @@ Summary:	SkipStone themes
 Summary(pl):	Motywy do SkipStone
 Name:		skipstone-themes
 Version:	0.7.9
-Release:	2
+Release:	3
 License:	GPL
 Group:		X11/Applications/Networking
 Source0:	http://muhri.net/skipstone/images/themes/GoldStone.tar.gz
