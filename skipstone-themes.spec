@@ -21,7 +21,7 @@ Source12:	http://muhri.net/skipstone/images/themes/revamped.skipstone.tar.gz
 URL:		http://www.muhri.net/skipstone/images/themes/
 BuildRequires:	gdk-pixbuf-devel
 BuildRequires:	libstdc++-devel
-Requires:	skipstone = %{version}
+Requires:	skipstone => %{version}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_prefix		/usr/X11R6
