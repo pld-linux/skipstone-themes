@@ -1,5 +1,5 @@
 Summary:	SkipStone themes
-Summary(pl.UTF-8):   Motywy do SkipStone
+Summary(pl.UTF-8):	Motywy do SkipStone
 Name:		skipstone-themes
 Version:	0.7.9
 Release:	3
