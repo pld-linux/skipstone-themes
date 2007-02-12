@@ -1,5 +1,5 @@
 Summary:	SkipStone themes
-Summary(pl):	Motywy do SkipStone
+Summary(pl.UTF-8):   Motywy do SkipStone
 Name:		skipstone-themes
 Version:	0.7.9
 Release:	3
@@ -42,7 +42,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 SkipStone Themes engine.
 
-%description -l pl
+%description -l pl.UTF-8
 Motywy do SkipStone.
 
 %prep
